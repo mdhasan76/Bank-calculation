@@ -7,6 +7,11 @@ document.getElementById('deposit').addEventListener('click', function () {
     const depositInputValue = depositInput.value;
     const totalStokMoney = document.getElementById('total-stok-money');
     const previousStockText = totalStokMoney.innerText;
+    depositInput.value = '';
+    if (isNaN(depositInputValue)) {
+        alert('Please provide valid number');
+        return;
+    }
 
     //sum of present deposit amount & previous amount
     // const prasentDeposit = parseFloat(previousDeposit) + parseFloat(depositInputValue);
@@ -16,7 +21,7 @@ document.getElementById('deposit').addEventListener('click', function () {
 
     totalStokMoney.innerText = parseFloat(previousStockText) + parseFloat(depositInputValue);//total stock money
 
-    depositInput.value = '';
+
 });
 
 // Withdraw counting
