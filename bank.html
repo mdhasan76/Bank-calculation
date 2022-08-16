@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ac page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="mt-10">
+        <div>
+            <h1 class="text-5xl text-center">See Your <span class="text-blue-600 font-semibold">Baper Moneeeey!</span>
+            </h1>
+
+            <div class="w-9/12 mx-auto grid grid-cols-3 gap-9 text-white mt-10">
+                <div class="text-center bg-teal-400 rounded-lg py-4">
+                    <h3 class="text-3xl py-2">Deposit</h3>
+                    <h2 class="text-5xl font-semibold">$<span id="deposit-money">00</span></h2>
+                </div>
+                <div class="text-center bg-blue-500 rounded-lg py-4">
+                    <h3 class="text-3xl py-2">Withdraw</h3>
+                    <h2 class="text-5xl font-semibold">$<span id="withdraw-money">00</span></h2>
+                </div>
+                <div class="text-center bg-purple-500 rounded-lg py-4">
+                    <h3 class="text-3xl py-2">TotalMoney</h3>
+                    <h2 class="text-5xl font-semibold">$<span id="total-stok-money">00</span></h2>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-9 w-9/12 mx-auto mt-10">
+                <div class="bg-teal-400 py-3 px-4 rounded">
+                    <input id="deposit-input" class="block py-1 rounded px-3" type="text" placeholder="$100">
+                    <button id="deposit"
+                        class="bg-pink-500 px-3 py-1 font-semibold rounded text-white my-3">Deposit</button>
+                </div>
+                <div class="bg-blue-400 py-3 rounded px-4">
+                    <input id="withdraw-input" class="block py-1 rounded px-3" type="text" placeholder="$100">
+                    <button id="withdraw"
+                        class="bg-pink-500 px-3 py-1 font-semibold rounded text-white my-3">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="/js/bank.js"></script>
+</body>
+
+</html>
