@@ -4,7 +4,7 @@ document.getElementById('btn').addEventListener('click', function () {
     const emailValue = email.value;
     const passwordValue = password.value;
     if (emailValue === 'mdhasan8064@gmail.com' && passwordValue === 'hasan85') {
-        window.location.href = '/bank.html'
+        window.location.href = 'bank.html'
     }
     else {
         if (emailValue != 'mdhasan8064@gmail.com') {
